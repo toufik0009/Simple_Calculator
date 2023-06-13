@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Calculator</string>
+    <string name="plus">+</string>
+    <string name="minas">-</string>
+    <string name="intu">*</string>
+    <string name="maltiplay">/</string>
+    <string name="egual">=</string>
+    <string name="copyright_2023_desing_by_toufik">copyright 2023, Desing By Toufik</string>
+</resources>
