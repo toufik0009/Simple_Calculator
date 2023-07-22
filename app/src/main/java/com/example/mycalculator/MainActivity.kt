@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                     no1-no2
 
                 }else{
-                    no2-no1
+                    no1-no2
                 }
                 var tvView :TextView = findViewById(R.id.tvView)
                 tvView.text = "$sub "
