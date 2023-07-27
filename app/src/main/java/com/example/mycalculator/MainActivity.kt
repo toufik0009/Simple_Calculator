@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 val sub = no1 - no2
 
                 var tvView :TextView = findViewById(R.id.tvView)
-                tvView.text = "$sub"//display sum
+                tvView.text = "$sub"
 
 
             }else{
