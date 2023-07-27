@@ -23,15 +23,16 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        //Plus
+        //sum
         btnAdd.setOnClickListener{
-            if (edtNo1.text.toString()!="" && edtNo2.text.toString()!=""){
-                val no1 = edtNo1.text.toString().toInt()
-                val no2 = edtNo2.text.toString().toInt()
+            if (edtNo1.text.toString()!="" && edtNo2.text.toString()!=""){//check Blank Value
+                val no1 = edtNo1.text.toString().toInt()//convert to  Int
+                val no2 = edtNo2.text.toString().toInt()//convert to  Int
+
                 val sum = no1 + no2
 
-                var tvView :TextView = findViewById(R.id.tvView)
-                tvView.text = "$sum"
+                var tvView :TextView = findViewById(R.id.tvView)//call by tvView
+                tvView.text = "$sum"//display sum
 
 
             }else{
@@ -39,22 +40,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //Minas
+        //sub
         btnMinas.setOnClickListener{
             if (edtNo1.text.toString()!="" && edtNo2.text.toString()!=""){
                 val no1 = edtNo1.text.toString().toInt()
                 val no2 = edtNo2.text.toString().toInt()
 
-                var sub: Int = 0
+                val sub = no1 - no2
 
-                sub = if(no1>no2){
-                    no1-no2
-
-                }else{
-                    no1-no2
-                }
                 var tvView :TextView = findViewById(R.id.tvView)
-                tvView.text = "$sub "
+                tvView.text = "$sub"//display sum
+
+
             }else{
                 Toast.makeText(this,"Please Fill The required Blanks",Toast.LENGTH_LONG).show();
             }
@@ -65,7 +62,9 @@ class MainActivity : AppCompatActivity() {
             if (edtNo1.text.toString()!="" && edtNo2.text.toString()!=""){
                 val no1 = edtNo1.text.toString().toInt()
                 val no2 = edtNo2.text.toString().toInt()
+
                 val mul=no1 * no2
+
                 var tvView :TextView = findViewById(R.id.tvView)
                 tvView.text = "$mul"
             }else{
@@ -78,14 +77,13 @@ class MainActivity : AppCompatActivity() {
             if (edtNo1.text.toString()!="" && edtNo2.text.toString()!=""){
                 val no1 = edtNo1.text.toString().toInt()
                 val no2 = edtNo2.text.toString().toInt()
-                var div: Int
-                div = 0
+
+                var div =0
                 if(no2==0){
-                    Toast.makeText(this,"a Value can't by Divided by Zero",Toast.LENGTH_LONG).show();
+                    Toast.makeText(this,"A Value can't be Divided by Zero",Toast.LENGTH_LONG).show();
                 }else{
                     div = no1 / no2
                 }
-
                 var tvView :TextView = findViewById(R.id.tvView)
                 tvView.text = "$div "
             }else{
